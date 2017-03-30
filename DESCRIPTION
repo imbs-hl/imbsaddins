@@ -1,0 +1,13 @@
+Package: imbsaddins
+Type: Package
+Title: RStudio addins from IMBS Lübeck
+Version: 0.1.0
+Authors@R: person("Damian", "Gola", email = "gola@imbs.uni-luebeck.de", role = c("aut", "cre"))
+Description: This package provides small addins for RStudio.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports:
+    qdap,
+    rstudioapi
+RoxygenNote: 5.0.1

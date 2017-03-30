@@ -1,0 +1,9 @@
+Name: Count selection words
+Description: Count the words in the selected text in the source editor.
+Binding: selection_word_count
+Interactive: false
+
+Name: Count document words
+Description: Count the words in the active source editor document.
+Binding: document_word_count
+Interactive: false
