@@ -9,7 +9,7 @@
 #' @export
 selection_word_count <- function() {
   selection <- rstudioapi::getSourceEditorContext()$selection[[1]]$text
-  word_count <- qdap::wc(selection)
+  word_count <- sapply(gregexpr("[[:alpha:]]+", selection), function(x) sum(x > 0))
   message(sprintf("%d words in selection.", word_count))
 }
 
@@ -23,6 +23,6 @@ selection_word_count <- function() {
 #' @family word_count
 document_word_count <- function() {
   content <- rstudioapi::getSourceEditorContext()$contents
-  word_count <- sum(qdap::wc(content), na.rm = TRUE)
+  word_count <- sum(sapply(gregexpr("[[:alpha:]]+", content), function(x) sum(x > 0)))
   message(sprintf("%d words in document.", word_count))
 }

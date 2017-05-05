@@ -15,4 +15,3 @@ Count the words in the active source editor document.
 \seealso{
 Other word_count: \code{\link{selection_word_count}}
 }
-

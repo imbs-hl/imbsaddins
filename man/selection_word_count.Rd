@@ -15,4 +15,3 @@ Count the words in the selected text in the source editor.
 \seealso{
 Other word_count: \code{\link{document_word_count}}
 }
-
